@@ -2,14 +2,55 @@
 Master securethebox repo
 
 # Getting Started
-## Clone this repo and initialize submodules
+1. Clone this repo and initialize submodules
 ```
 git clone https://github.com/cavalrytactics/securethebox.git
 git submodule update --init --recursive
 ```
+2. Install Docker-for-Mac
+- make sure its running (It will be used to build images)
+
+3. Install Server dependencies
+```
+cd securethebox-server
+pip3 install -r requirements.txt
+```
+
+4. Install Client dependencies
+```
+cd securethebox-client
+yarn install
+```
+
+# Terminal Setup
+## Terminal 1 - Server
+![server](./terminal_server.png "server")
+```
++──────────────────────────────────────+──────────────────────────────────────+
+|                                      |                                      |
+|      gunicorn main:app --reload      |  pytest -vs -x --testmon --loopfail  |
+|                                      |                                      |
++──────────────────────────────────────+──────────────────────────────────────+
+```
+- gunicorn main:app --reload
+- pytest -vs -x --testmon --loopfail
+
+## Terminal 2 - Client
+![client](./terminal_server.png "client")
+```
++──────────────────────────────────────+──────────────────────────────────────+
+|                                      |                                      |
+|              yarn start              |        yarn run relay --watch        |
+|                                      |                                      |
++──────────────────────────────────────+──────────────────────────────────────+
+```
+- yarn start
+- yarn run relay --watch
 
 # About Backend
 ## Keeping it Simple
+- flask, flask-restful, gunicorn, graphene
+- pytest, pytest-testmon, pytest-xdist
 
 # About Frontend
 ## Client Origin
