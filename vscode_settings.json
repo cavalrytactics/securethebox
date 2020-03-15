@@ -1,0 +1,50 @@
+{
+    "git.confirmSync": false,
+    "workbench.colorTheme": "Monokai ST3",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "extensions.ignoreRecommendations": true,
+    "window.zoomLevel": 0,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "workbench.activityBar.visible": true,
+    "workbench.editor.showTabs": true,
+    "workbench.editor.enablePreview": false,
+	"workbench.editor.enablePreviewFromQuickOpen": true,
+    "editor.rulers": [
+        80
+    ],
+    "terminal.integrated.rendererType": "dom",
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "local-history.maxDisplay": 1000,
+    "local-history.treeLocation": "localHistory",
+    "fileAccess.indicatorAction": "toggle",
+    "vim.normalModeKeyBindings": [
+        {
+        "before": ["<space>"],
+        "commands": ["workbench.action.showCommands"]
+        }
+        ],
+        "vim.statusBarColors.insert": "#F92672",
+        "vim.statusBarColors.normal": "#272822",
+        "vim.statusBarColors.visual": "#A6E22E",
+        "vim.insertModeKeyBindings": [{ "before": ["<C-]>"], "commands": ["editor.action.indentLines"] }, { "before": ["<C-[>"], "commands": ["editor.action.outdentLines"] }],
+        "vim.handleKeys": {
+        "<D-d>": false,
+        "<C-x>": false,
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-c>": false,
+        "<C-v>": false
+        },
+        "vim.cursorStylePerMode.insert": "block",
+        "vim.cursorStylePerMode.normal": "block-outline",
+        "vim.cursorStylePerMode.visual": "line",
+        "workbench.colorCustomizations": {
+            "statusBar.background": "#005f5f",
+            "statusBar.noFolderBackground": "#005f5f",
+            "statusBar.debuggingBackground": "#005f5f"
+        },
+        "vim.statusBarColorControl": true,
+        "editor.multiCursorModifier": "alt"
+}

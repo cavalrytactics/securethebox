@@ -1,11 +1,22 @@
 # VIM 
 ## Normal mode
+: > %s/old/new/g = replace string
+/ > word = search for word
+/ > esc > n = find next
+
 h = left
 l = right
 j = down
 k = up
+
+i = INSERT mode inbetween
+a = INSERT mode append   
+shift + O = INSERT mode blank ABOVE selected line
+shift + o = INSERT mode blank BELOW selected line
+v = VISUAL mode
 d > d = delete line
-d > l = delete 1 char
+d > l = delete 1 character right
+d > h = delete 1 character left
 d > a > w = delete selected word
 cmd + k = move current line up
 cmd + j = move current line down
@@ -14,7 +25,7 @@ cmd + j = move current line down
 viw = select word
 shift + S = surround mode
 viw > shift + S > ' = surround with '
-viw > y > p = copy word and paste
+viw > y > esc >p = copy word and paste
 
 # Editor control
 ## Quick search
