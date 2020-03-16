@@ -13,8 +13,11 @@ git submodule update --init --recursive
 3. Install Server dependencies
 ```
 cd securethebox-server
+python3 -m virtualenv venv
+. venv/bin/activate
 pip3 install -r requirements.txt
 ```
+- Now you need to have .env/secrets decrypted for local development
 
 4. Install Client dependencies
 ```
