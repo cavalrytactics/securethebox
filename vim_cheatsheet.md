@@ -1,4 +1,4 @@
-# VIM 
+# VIM. 
 ## Normal mode
 ```
 : > %s/old/new/g = replace string
