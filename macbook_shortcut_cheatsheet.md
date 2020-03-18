@@ -1,4 +1,64 @@
-# VIM. 
+# Mac Setup
+- https://karabiner-elements.pqrs.org
+- Swap Esc with Caps Lock key
+- Swap command_right with command_left
+![client](./swap_keys.png "client")
+
+- Add complex rule to hjkl to directional
+![client](./hjkl_arrowkeys.png "client")
+
+- Increase key speed
+![client](./mac_keyboard_speed.png "client")
+
+- Turn off press and hold 
+```
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+```
+
+## Mac App Shortcuts
+- System Preferences > Keyboard > App Shortcuts
+- Change Chrome shortcuts
+![client](./chrome_shortcuts.png "client")
+
+## Mac Mission Control
+- System Preferences > Keyboard > Mission Control
+![client](./mission_control.png "client")
+
+## Windows Manager 
+```
+brew install koekeishiya/formulae/yabai
+brew services start yabai
+```
+
+## HotKeys Manager
+```
+brew install koekeishiya/formulae/skhd
+brew services start skhd
+```
+
+## Terminal
+- Alacritty
+- https://github.com/alacritty/alacritty
+```
+brew cask install alacritty
+```
+
+## Multiplexer
+- Tmux + Oh-my-zsh
+```
++──────────────────────────────────────+──────────────────────────────────────+
+ctrl + tab                             | toggle terminal
+ctrl + `                               | select tab
+shift + right-arrow                    | move to right tab
+shift + left-arrow                     | move to left tab
+ctrl + b > c                           | create new tab
+ctrl + b > , > enter                   | rename tab
+ctrl + b > x > y > enter               | close window
+ctrl + b > 5                           | split window
++──────────────────────────────────────+──────────────────────────────────────+
+```
+
+# Editor VIM+VSCode   
 - protip. replace esc with capslock
 - practice touch-typing/motion everyday
 - read: http://tnerual.eriogerg.free.fr/vimqrc.html daily
@@ -9,32 +69,40 @@
 +──────────────────────────────────────+──────────────────────────────────────+
 h                                      | left
 l                                      | right
-j                                      | down
 k                                      | up
+j                                      | down
 0                                      | move to start of selected line
 $                                      | move to end of selected line
-s > {char}{char}                       | search for character
-S > {char}{char} > ;                   | search for character next
-S > {char}{char}                       | search backwards
-S > {char}{char} > ;                   | search backwards next
+s > {char} > {char}                    | search for character
+shift+s > {char} > {char} > ;          | search for character next
+shift+s > {char} > {char}              | search backwards
+shift+s > {char} > {char} > ;          | search backwards next
 f > {char} > ,                         | move back to char
 f > {char} > ;                         | move forward to char
-F > {char}                             | move back to char
-shift + m                              | move cursor to middle line of window
+shift + f > {char} > ;                 | move back to char
+shift + h                              | move cursor to top of screen 
+shift + m                              | move cursor to middle of screen 
+shift + l                              | move cursor to bottom of screen 
+g > i                                  | move to last edited section
 g > g                                  | move first line
-G                                      | move last line
-{num} > G                              | move to {num} line
+shift + g                              | move last line
+{number} > shift + g                   | move to {num} line
+shift + 5                              | move to matching {} or ()
 +──────────────────────────────────────+──────────────────────────────────────+
 ```
+
 ## Normal mode
 ```
 +──────────────────────────────────────+──────────────────────────────────────+
 tab                                    | escape to enter NORMAL mode
 cmd > click                            | multi cursor select
-/ > word > enter                       | search for word
-/ > word > enter > n                    | find next
+/ > {word} > enter                     | search for word FORWARD 
+? > {word} > enter                     | search for word BACKWARD 
+/ > {word} > enter > n                 | find next
+q > :                                  | vim history 
 +──────────────────────────────────────+──────────────────────────────────────+
 ```
+
 ## Insert and Replace
 ```
 +──────────────────────────────────────+──────────────────────────────────────+
@@ -49,7 +117,7 @@ o                                      | INSERT mode blank BELOW selected line
 d > d                                  | delete line
 c > c                                  | delete line and INSERT mode
 shift + c                              | delete everything after cursor
-U                                      | redo
+shift + u                              | redo
 u                                      | undo
 d > l                                  | delete 1 character right
 d > h                                  | delete 1 character left
@@ -58,17 +126,23 @@ cmd + k                                | move current line up
 cmd + j                                | move current line down
 y > y                                  | copy line
 p > p                                  | paste line
+g > u > a > w                          | convert word to lower case
+g > shift+u > a > w                    | convert word to upper case
+g > u > u                              | convert line all lower case
+g > shift+u > shift+u                  | convert line all upper case
 +──────────────────────────────────────+──────────────────────────────────────+
 ```
+
 ## Visual mode
 ```
 +──────────────────────────────────────+──────────────────────────────────────+
-highlight > o                          | swap highlight position
-viw                                    | select word
-shift + S                              | surround mode
-viw > shift + S > "                    | surround with "
-viw > y > esc > p                      | copy word and paste after cursor
-viw > y > esc > P                      | copy word and paste before cursor
+
+v > highlight > o                      | swap highlight position
+v > i > w                              | select word
+v > i > w > shift + s                  | surround mode
+v > i > w > shift + s > {char}         | surround with {char} 
+v > i > w > y > esc > p                | copy word and paste after cursor
+v > i > w > y > esc > P                | copy word and paste before cursor
 +──────────────────────────────────────+──────────────────────────────────────+
 ```
 
@@ -80,17 +154,21 @@ space                                  | quick search                   *remap*
 space > delete                         | search file                    *remap*
 cmd + 1                                | find in files                  *remap*
 cmd + 2                                | view explorer                  *remap*
+cmd + 3                                | go to definition of cursor     *remap*
 +──────────────────────────────────────+──────────────────────────────────────+
 ```
+
 ## Tab control
 ```
 +──────────────────────────────────────+──────────────────────────────────────+
+cmd + shift + t                        | re-open recently closed tab
 cmd + d                                | close selected tab             *remap*
 cmd + w                                | toggle to other split window   *remap*
 cmd + e                                | toggle right tab               *remap*
 cmd + q                                | toggle left tab                *remap*
 +──────────────────────────────────────+──────────────────────────────────────+
 ```
+
 ## Window Splitting
 ```
 +──────────────────────────────────────+──────────────────────────────────────+
@@ -99,16 +177,15 @@ cmd + n                                | split horizontal               *remap*
 +──────────────────────────────────────+──────────────────────────────────────+
 ```
 
-# Terminal
-## Tmux + Oh-my-zsh
+# Chrome
 ```
 +──────────────────────────────────────+──────────────────────────────────────+
-ctrl + tab                             | toggle terminal
-ctrl + `                               | select tab
-shift + right-arrow                    | move to right tab
-shift + left-arrow                     | move to left tab
-ctrl + b > c                           | create new tab
-ctrl + b > , > enter                   | rename tab
-ctrl + b > x > y > enter               | close window
+ctrl + shift + t                       | re-open recently closed tab
+cmd + e                                | toggle next tab                *remap*
+cmd + q                                | close current tab              *remap*
+cmd + d                                | open new tab                   *remap*
+cmd + l                                | focus to search bar
+space                                  | scroll down
+shift + space                          | scroll up
 +──────────────────────────────────────+──────────────────────────────────────+
 ```
