@@ -1,23 +1,24 @@
 # Mac Setup
 - https://karabiner-elements.pqrs.org
 - Swap Esc with Caps Lock key
-- Swap command_right with command_left
+- Swap left_command with right_command
+- Swap right_command with right_control
 ![client](./swap_keys.png "client")
 
-- Add complex modification rule to hjkl to directional
+## Add complex modification rule to hjkl to directional
 ![client](./hjkl_arrowkeys.png "client")
 ```
 +──────────────────────────────────────+──────────────────────────────────────+
-left_command + h                            | arrow left
-left_command + j                            | arrow down
-left_command + k                            | arrow up
-left_command + l                            | arrow right
+left_command + h                       | arrow left
+left_command + j                       | arrow down
+left_command + k                       | arrow up
+left_command + l                       | arrow right
 +──────────────────────────────────────+──────────────────────────────────────+
 ```
-- Increase key speed
+## Increase key speed
 ![client](./mac_keyboard_speed.png "client")
 
-- Turn off press and hold 
+## Turn off press and hold 
 ```
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 ```
@@ -31,8 +32,8 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 ![client](./mission_control.png "client")
 ```
 +──────────────────────────────────────+──────────────────────────────────────+
-command + u                            | move window left
-command + p                            | move window right
+left_command + u                       | move window left
+left_command + p                       | move window right
 +──────────────────────────────────────+──────────────────────────────────────+
 ```
 ## Windows Manager 
@@ -58,22 +59,28 @@ brew cask install alacritty
 - Tmux + Oh-my-zsh
 ```
 +──────────────────────────────────────+──────────────────────────────────────+
-ctrl + tab                             | toggle terminal
-ctrl + `                               | select tab
-shift + right-arrow                    | move to right tab
-shift + left-arrow                     | move to left tab
-ctrl + b > c                           | create new tab
-ctrl + b > , > enter                   | rename tab
-ctrl + b > x > y > enter               | close window
-ctrl + b > 5                           | split window
+right_command + tab                    | toggle terminal
+left_command + w                       | select tab
+shift + left_command > h               | move to left tmux tab
+shift + left_command > l               | move to right tmux tab
+right_command + a >                    | create new tab
+right_command + a > , > enter          | rename tab
+right_command + a > x > y > enter      | close window
+right_command + a > 5                  | split window
+right_command + a > h                  | move left split window
+right_command + a > l                  | move right split window
+right_command + r > {word}             | reverse search command history 
 +──────────────────────────────────────+──────────────────────────────────────+
 ```
 
 ## Shell Alias
 ```
+vim ~/.zshrc
 alias g="git"
 alias p="python3"
 alias c="git add . && git commit -m 'quick deploy' && git push"
+alias v=". venv/bin/activate"
+source ~/.zshrc
 ```
 
 # Editor VIM+VSCode   
@@ -90,9 +97,9 @@ j                                      | down
 0                                      | move to start of selected line
 $                                      | move to end of selected line
 s > {char} > {char}                    | search for character
-shift+s > {char} > {char} > ;          | search for character next
-shift+s > {char} > {char}              | search backwards
-shift+s > {char} > {char} > ;          | search backwards next
+shift + s > {char} > {char} > ;        | search for character next
+shift + s > {char} > {char}            | search backwards
+shift + s > {char} > {char} > ;        | search backwards next
 f > {char} > ,                         | move back to char
 f > {char} > ;                         | move forward to char
 shift + f > {char} > ;                 | move back to char
@@ -111,7 +118,7 @@ shift + 5                              | move to matching {} or ()
 ```
 +──────────────────────────────────────+──────────────────────────────────────+
 tab                                    | escape to enter NORMAL mode
-cmd > click                            | multi cursor select
+left_command > click                   | multi cursor select
 / > {word} > enter                     | search for word FORWARD 
 ? > {word} > enter                     | search for word BACKWARD 
 / > {word} > enter > n                 | find next
@@ -138,8 +145,8 @@ u                                      | undo
 d > l                                  | delete 1 character right
 d > h                                  | delete 1 character left
 d > a > w                              | delete selected word
-cmd + k                                | move current line up
-cmd + j                                | move current line down
+left_command + k                       | move current line up
+left_command + j                       | move current line down
 y > y                                  | copy line
 p                                      | paste line after cursor
 shift + p                              | paste line before cursor
@@ -169,28 +176,28 @@ v > i > w > y > esc > P                | copy word and paste before cursor
 +──────────────────────────────────────+──────────────────────────────────────+
 space                                  | quick search                   *remap*
 space > delete                         | search file                    *remap*
-cmd + 1                                | find in files                  *remap*
-cmd + 2                                | view explorer                  *remap*
-cmd + 3                                | go to definition of cursor     *remap*
+left_command + 1                       | find in files                  *remap*
+left_command + 2                       | view explorer                  *remap*
+left_command + 3                       | go to definition of cursor     *remap*
 +──────────────────────────────────────+──────────────────────────────────────+
 ```
 
 ## Tab control
 ```
 +──────────────────────────────────────+──────────────────────────────────────+
-cmd + shift + t                        | re-open recently closed tab
-cmd + d                                | close selected tab             *remap*
-cmd + w                                | toggle to other split window   *remap*
-cmd + e                                | toggle right tab               *remap*
-cmd + q                                | toggle left tab                *remap*
+left_command + shift + t               | re-open recently closed tab
+left_command + d                       | close selected tab             *remap*
+left_command + w                       | toggle to other split window   *remap*
+left_command + e                       | toggle right tab               *remap*
+left_command + q                       | toggle left tab                *remap*
 +──────────────────────────────────────+──────────────────────────────────────+
 ```
 
 ## Window Splitting
 ```
 +──────────────────────────────────────+──────────────────────────────────────+
-cmd + m                                | split vertical                 *remap*
-cmd + n                                | split horizontal               *remap*
+left_command + m                       | split vertical                 *remap*
+left_command + n                       | split horizontal               *remap*
 +──────────────────────────────────────+──────────────────────────────────────+
 ```
 
@@ -198,10 +205,10 @@ cmd + n                                | split horizontal               *remap*
 ```
 +──────────────────────────────────────+──────────────────────────────────────+
 ctrl + shift + t                       | re-open recently closed tab
-cmd + e                                | toggle next tab                *remap*
-cmd + q                                | close current tab              *remap*
-cmd + d                                | open new tab                   *remap*
-cmd + l                                | focus to search bar
+left_command + e                       | toggle next tab                *remap*
+left_command + q                       | close current tab              *remap*
+left_command + d                       | open new tab                   *remap*
+left_command + l                       | focus to search bar
 space                                  | scroll down
 shift + space                          | scroll up
 +──────────────────────────────────────+──────────────────────────────────────+

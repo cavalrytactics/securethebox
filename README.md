@@ -37,6 +37,7 @@ yarn install
 ```
 - gunicorn main:app --reload
 - pytest -vs -x --testmon --loopfail
+- watch -n 10 pytest -vs -x tests/app_schema/test_export_schema.py
 
 ## Terminal 2 - Client
 ![client](./terminal_server.png "client")
