@@ -4,9 +4,16 @@
 - Swap command_right with command_left
 ![client](./swap_keys.png "client")
 
-- Add complex rule to hjkl to directional
+- Add complex modification rule to hjkl to directional
 ![client](./hjkl_arrowkeys.png "client")
-
+```
++──────────────────────────────────────+──────────────────────────────────────+
+left_command + h                            | arrow left
+left_command + j                            | arrow down
+left_command + k                            | arrow up
+left_command + l                            | arrow right
++──────────────────────────────────────+──────────────────────────────────────+
+```
 - Increase key speed
 ![client](./mac_keyboard_speed.png "client")
 
@@ -19,11 +26,15 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 - System Preferences > Keyboard > App Shortcuts
 - Change Chrome shortcuts
 ![client](./chrome_shortcuts.png "client")
-
 ## Mac Mission Control
 - System Preferences > Keyboard > Mission Control
 ![client](./mission_control.png "client")
-
+```
++──────────────────────────────────────+──────────────────────────────────────+
+command + u                            | move window left
+command + p                            | move window right
++──────────────────────────────────────+──────────────────────────────────────+
+```
 ## Windows Manager 
 ```
 brew install koekeishiya/formulae/yabai
@@ -58,9 +69,14 @@ ctrl + b > 5                           | split window
 +──────────────────────────────────────+──────────────────────────────────────+
 ```
 
+## Shell Alias
+```
+alias g="git"
+alias p="python3"
+alias c="git add . && git commit -m 'quick deploy' && git push"
+```
+
 # Editor VIM+VSCode   
-- protip. replace esc with capslock
-- practice touch-typing/motion everyday
 - read: http://tnerual.eriogerg.free.fr/vimqrc.html daily
 
 ## Motion
@@ -125,7 +141,8 @@ d > a > w                              | delete selected word
 cmd + k                                | move current line up
 cmd + j                                | move current line down
 y > y                                  | copy line
-p > p                                  | paste line
+p                                      | paste line after cursor
+shift + p                              | paste line before cursor
 g > u > a > w                          | convert word to lower case
 g > shift+u > a > w                    | convert word to upper case
 g > u > u                              | convert line all lower case
