@@ -160,7 +160,7 @@ g > shift+u > shift+u                  | convert line all upper case
 ## Visual mode
 ```
 +──────────────────────────────────────+──────────────────────────────────────+
-
+left_command > /                       | comment out selected lines
 v > highlight > o                      | swap highlight position
 v > i > w                              | select word
 v > i > w > shift + s                  | surround mode
