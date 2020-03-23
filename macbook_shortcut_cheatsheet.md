@@ -95,6 +95,9 @@ l                                      | right
 k                                      | up
 j                                      | down
 0                                      | move to start of selected line
+right_command > i                      | move cursor history forward
+right_command > o                      | move cursor history back 
+left_command + 3                       | go to definition of cursor     *remap*
 $                                      | move to end of selected line
 s > {char} > {char}                    | search for character
 shift + s > {char} > {char} > ;        | search for character next
@@ -134,6 +137,7 @@ x                                      | delete character in cursor position
 shift + r                              | REPLACE mode
 i                                      | INSERT mode inbetween
 a                                      | INSERT mode append   
+shift + a                              | INSERT mode move to end of line
 v                                      | VISUAL mode
 shift + o                              | INSERT mode blank ABOVE selected line
 o                                      | INSERT mode blank BELOW selected line
@@ -162,6 +166,7 @@ g > shift+u > shift+u                  | convert line all upper case
 ```
 +──────────────────────────────────────+──────────────────────────────────────+
 left_command > /                       | comment out selected lines
+shift + v                              | select current line
 v > highlight > o                      | swap highlight position
 v > i > w                              | select word
 v > i > w > shift + s                  | surround mode
