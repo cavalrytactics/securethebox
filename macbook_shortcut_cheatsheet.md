@@ -63,7 +63,7 @@ right_command + tab                    | toggle terminal
 left_command + w                       | select tab
 shift + left_command > h               | move to left tmux tab
 shift + left_command > l               | move to right tmux tab
-right_command + a >                    | create new tab
+right_command + a > c                  | create new tab
 right_command + a > , > enter          | rename tab
 right_command + a > x > y > enter      | close window
 right_command + a > 5                  | split window
@@ -145,6 +145,7 @@ u                                      | undo
 d > l                                  | delete 1 character right
 d > h                                  | delete 1 character left
 d > a > w                              | delete selected word
+d > f > {char}                         | delete from cursor to {char}
 left_command + k                       | move current line up
 left_command + j                       | move current line down
 y > y                                  | copy line
@@ -202,8 +203,33 @@ left_command + n                       | split horizontal               *remap*
 ```
 
 # Chrome
+- Install [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb) chrome extension
+- Vimium custom mappings
+```
+unmap T
+map t Vomnibar.activateTabSelection
+unmap r
+unmap b
+unmap B
+unmap g0
+unmap g$
+unmap x
+unmap X
+unmap W
+map 0 firstTab
+map $ lastTab
+unmap p
+unmap P
+```
 ```
 +──────────────────────────────────────+──────────────────────────────────────+
+?                                      | open vimium shortcut help 
+g > e                                  | edit current url
+shift + h                              | go back in history
+shift + l                              | go forward in history
+f > {char} > {char}                    | click on link
+o > {word}                             | open URL, bookmark or history entry
+T > {word}                             | search open tabs
 ctrl + shift + t                       | re-open recently closed tab
 left_command + e                       | toggle next tab                *remap*
 left_command + q                       | close current tab              *remap*
