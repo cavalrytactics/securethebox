@@ -3,10 +3,10 @@
 - Swap Esc with Caps Lock key
 - Swap left_command with right_command
 - Swap right_command with right_control
-![client](./swap_keys.png "client")
+![client](./images/swap_keys.png "client")
 
 ## Add complex modification rule to hjkl to directional
-![client](./hjkl_arrowkeys.png "client")
+![client](./images/hjkl_arrowkeys.png "client")
 ```
 +──────────────────────────────────────+──────────────────────────────────────+
 left_command + h                       | arrow left
@@ -16,7 +16,7 @@ left_command + l                       | arrow right
 +──────────────────────────────────────+──────────────────────────────────────+
 ```
 ## Increase key speed
-![client](./mac_keyboard_speed.png "client")
+![client](./images/mac_keyboard_speed.png "client")
 
 ## Turn off press and hold 
 ```
@@ -26,10 +26,10 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 ## Mac App Shortcuts
 - System Preferences > Keyboard > App Shortcuts
 - Change Chrome shortcuts
-![client](./chrome_shortcuts.png "client")
+![client](./images/chrome_shortcuts.png "client")
 ## Mac Mission Control
 - System Preferences > Keyboard > Mission Control
-![client](./mission_control.png "client")
+![client](./images/mission_control.png "client")
 ```
 +──────────────────────────────────────+──────────────────────────────────────+
 left_command + u                       | move window left

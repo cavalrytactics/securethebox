@@ -27,7 +27,7 @@ yarn install
 
 # Terminal Setup
 ## Terminal 1 - Server
-![server](./terminal_server.png "server")
+![server](./images/terminal_server.png "server")
 ```
 +──────────────────────────────────────+──────────────────────────────────────+
 |                                      |                                      |
@@ -40,7 +40,7 @@ yarn install
 - watch -n 10 pytest -vs -x tests/app_schema/test_export_schema.py
 
 ## Terminal 2 - Client
-![client](./terminal_server.png "client")
+![client](./images/terminal_server.png "client")
 ```
 +──────────────────────────────────────+──────────────────────────────────────+
 |                                      |                                      |
