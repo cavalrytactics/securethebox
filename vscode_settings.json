@@ -10,20 +10,27 @@
     "workbench.activityBar.visible": true,
     "workbench.editor.showTabs": true,
     "workbench.editor.enablePreview": false,
-	"workbench.editor.enablePreviewFromQuickOpen": true,
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+    "workbench.editor.tabSizing": "shrink",
     "editor.rulers": [
         80
     ],
     "terminal.integrated.rendererType": "dom",
     "terminal.integrated.shell.osx": "/bin/zsh",
-    "local-history.maxDisplay": 1000,
-    "local-history.treeLocation": "localHistory",
-    "fileAccess.indicatorAction": "toggle",
     "vim.normalModeKeyBindings": [
         {
-        "before": ["<space>"],
-        "commands": ["workbench.action.showCommands"]
-        }
+        "before": ["m"],
+        "commands": ["bookmarks.toggle"]
+        },
+        {
+        "before": ["space"],
+        "commands": ["bookmarks.listFromAllFiles"]
+        // "commands": ["workbench.action.showCommands"]
+        },
+        {
+        "before": ["n"],
+        "commands": ["bookmarks.jumpToNext"]
+        },
         ],
         "vim.statusBarColors.insert": "#F92672",
         "vim.statusBarColors.normal": "#272822",
@@ -46,5 +53,25 @@
             "statusBar.debuggingBackground": "#005f5f"
         },
         "vim.statusBarColorControl": true,
-        "editor.multiCursorModifier": "alt"
+        "editor.multiCursorModifier": "alt",
+        "vim.camelCaseMotion.enable": true,
+        "vim.searchHighlightColor": "#66D9EF",
+        "vim.searchHighlightTextColor": "#272822",
+        "vim.sneak": true,
+        "vim.easymotionMarkerForegroundColorOneChar": "#F92672",
+        "vim.easymotionMarkerForegroundColorTwoChar": "#F92672",
+        "terminal.external.osxExec": "Alacritty.app",
+        "editor.minimap.enabled": false,
+        "bracketPairColorizer.timeOut": 0,
+        "bracketPairColorizer.showBracketsInGutter": true,
+        "bracketPairColorizer.showBracketsInRuler": true,
+        "editor.suggestSelection": "first",
+        "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+        "bookmarks.navigateThroughAllFiles": true,
+        "bookmarks.sideBar.expanded": true,
+        "bookmarks.useWorkaroundForFormatters": true,
+        "vsintellicode.sql.completionsEnabled": false,
+        "python.jediEnabled": false,
+        "bookmarks.saveBookmarksInProject": true,
+        "vim.scroll": 5
 }

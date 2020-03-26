@@ -82,6 +82,15 @@ alias c="git add . && git commit -m 'quick deploy' && git push"
 alias v=". venv/bin/activate"
 source ~/.zshrc
 ```
+# Bookmarks
+```
++──────────────────────────────────────+──────────────────────────────────────+
+m                                      | toggle bookmark line          *remap* 
+n                                      | toggle next bookmark          *remap* 
+space                                  | list bookmarks                *remap*
+left_command + l                       | move to next bookmark         *remap* 
++──────────────────────────────────────+──────────────────────────────────────+
+```
 
 # Editor VIM+VSCode   
 - read: http://tnerual.eriogerg.free.fr/vimqrc.html daily
@@ -94,11 +103,16 @@ h                                      | left
 l                                      | right
 k                                      | up
 j                                      | down
-0                                      | move to start of selected line
+left_command + a                       | move to start of cursor line
+left_command + f                       | move to end of cursor line     *remap*
+left_command + j                       | move down X lines              *remap*
+left_command + k                       | move up X lines                *remap*
+0                                      | move to start of cursor line
+$                                      | move to end of cursor line
+' > '                                  | move cursor to previous position
 right_command > i                      | move cursor history forward
 right_command > o                      | move cursor history back 
 left_command + 3                       | go to definition of cursor     *remap*
-$                                      | move to end of selected line
 s > {char} > {char}                    | search for character
 shift + s > {char} > {char} > ;        | search for character next
 shift + s > {char} > {char}            | search backwards
@@ -114,6 +128,7 @@ g > g                                  | move first line
 shift + g                              | move last line
 {number} > shift + g                   | move to {num} line
 shift + 5                              | move to matching {} or ()
+shift + ; > {num} > enter              | move to line {num} 
 +──────────────────────────────────────+──────────────────────────────────────+
 ```
 
@@ -153,12 +168,16 @@ d > f > {char}                         | delete from cursor to {char}
 left_command + k                       | move current line up
 left_command + j                       | move current line down
 y > y                                  | copy line
+y > i > w                              | copy cursor word
+v > i > w > p                          | paste replace cursor word
 p                                      | paste line after cursor
 shift + p                              | paste line before cursor
 g > u > a > w                          | convert word to lower case
 g > shift+u > a > w                    | convert word to upper case
 g > u > u                              | convert line all lower case
 g > shift+u > shift+u                  | convert line all upper case
+g > g > g > u > shift + g              | convert all linees to lower case
+g > g > g > shift + u > shift + g      | convert all linees to upper case
 +──────────────────────────────────────+──────────────────────────────────────+
 ```
 
@@ -180,7 +199,7 @@ v > i > w > y > esc > P                | copy word and paste before cursor
 ## Quick search
 ```
 +──────────────────────────────────────+──────────────────────────────────────+
-space                                  | quick search                   *remap*
+left_command + space                   | quick search                   *remap*
 space > delete                         | search file                    *remap*
 left_command + 1                       | find in files                  *remap*
 left_command + 2                       | view explorer                  *remap*
@@ -211,6 +230,10 @@ left_command + n                       | split horizontal               *remap*
 - Install [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb) chrome extension
 - Vimium custom mappings
 ```
+# Insert your preferred key mappings here.
+unmap o
+unmap O
+map o Vomnibar.activateInNewTab
 unmap T
 map t Vomnibar.activateTabSelection
 unmap r
@@ -225,6 +248,9 @@ map 0 firstTab
 map $ lastTab
 unmap p
 unmap P
+unamp u
+unamp U
+unmap gu
 ```
 ```
 +──────────────────────────────────────+──────────────────────────────────────+
