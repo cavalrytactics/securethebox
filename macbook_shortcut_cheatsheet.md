@@ -1,19 +1,20 @@
 # Mac Setup
+
+## karabiner-elements
 - https://karabiner-elements.pqrs.org
 - Swap Esc with Caps Lock key
 - Swap left_command with right_command
 - Swap right_command with right_control
 ![client](./images/swap_keys.png "client")
-
-## Add complex modification rule to hjkl to directional
+- Add complex modification rule to hjkl to directional
 ![client](./images/hjkl_arrowkeys.png "client")
 ```
-+──────────────────────────────────────+──────────────────────────────────────+
-left_command + h                       | arrow left
-left_command + j                       | arrow down
-left_command + k                       | arrow up
-left_command + l                       | arrow right
-+──────────────────────────────────────+──────────────────────────────────────+
+╔══════════════════════════════════════╦══════════════════════════════════════╗
+left_command + h                       ║ arrow left
+left_command + j                       ║ arrow down
+left_command + k                       ║ arrow up
+left_command + l                       ║ arrow right
+╚══════════════════════════════════════╩══════════════════════════════════════╝
 ```
 ## Increase key speed
 ![client](./images/mac_keyboard_speed.png "client")
@@ -27,14 +28,15 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 - System Preferences > Keyboard > App Shortcuts
 - Change Chrome shortcuts
 ![client](./images/chrome_shortcuts.png "client")
+
 ## Mac Mission Control
 - System Preferences > Keyboard > Mission Control
 ![client](./images/mission_control.png "client")
 ```
-+──────────────────────────────────────+──────────────────────────────────────+
-left_command + u                       | move window left
-left_command + p                       | move window right
-+──────────────────────────────────────+──────────────────────────────────────+
+╔══════════════════════════════════════╦══════════════════════════════════════╗
+left_command + u                       ║ move desktop window left
+left_command + p                       ║ move desktop window right
+╚══════════════════════════════════════╩══════════════════════════════════════╝
 ```
 ## Windows Manager 
 ```
@@ -58,19 +60,20 @@ brew cask install alacritty
 ## Multiplexer
 - Tmux + Oh-my-zsh
 ```
-+──────────────────────────────────────+──────────────────────────────────────+
-right_command + tab                    | toggle terminal
-left_command + w                       | select tab
-shift + left_command > h               | move to left tmux tab
-shift + left_command > l               | move to right tmux tab
-right_command + a > c                  | create new tab
-right_command + a > , > enter          | rename tab
-right_command + a > x > y > enter      | close window
-right_command + a > 5                  | split window
-right_command + a > h                  | move left split window
-right_command + a > l                  | move right split window
-right_command + r > {word}             | reverse search command history 
-+──────────────────────────────────────+──────────────────────────────────────+
+╔══════════════════════════════════════╦══════════════════════════════════════╗
+right_command + tab                    ║ toggle terminal               *remap*
+right_command + `                      ║ toggle terminal fullscreen    *remap*
+shift + left_command > h               ║ move to left tmux tab
+shift + left_command > l               ║ move to right tmux tab
+right_command + a > c                  ║ create new tab
+right_command + a > , > enter          ║ rename tab
+right_command + a > x > y > enter      ║ close window
+right_command + a > shift + 5          ║ split window
+right_command + a > z                  ║ toggle split window expand
+right_command + a > h                  ║ move left split window
+right_command + a > l                  ║ move right split window
+right_command + r > {word}             ║ reverse search command history 
+╚══════════════════════════════════════╩══════════════════════════════════════╝
 ```
 
 ## Shell Alias
@@ -84,146 +87,162 @@ source ~/.zshrc
 ```
 # Bookmarks
 ```
-+──────────────────────────────────────+──────────────────────────────────────+
-m                                      | toggle bookmark line          *remap* 
-n                                      | toggle next bookmark          *remap* 
-space                                  | list bookmarks                *remap*
-left_command + l                       | move to next bookmark         *remap* 
-+──────────────────────────────────────+──────────────────────────────────────+
+╔══════════════════════════════════════╦══════════════════════════════════════╗
+m                                      ║ toggle bookmark line          *remap* 
+n                                      ║ toggle next bookmark          *remap* 
+space                                  ║ list bookmarks                *remap*
+left_command + l                       ║ move to next bookmark         *remap* 
+╚══════════════════════════════════════╩══════════════════════════════════════╝
 ```
 
 # Editor VIM+VSCode   
-- read: http://tnerual.eriogerg.free.fr/vimqrc.html daily
+- read: http://vimdoc.sourceforge.net/htmldoc/vimindex.html
+- read: http://tnerual.eriogerg.free.fr/vimqrc.html
+- vscode 'when' conditions:
+  - https://code.visualstudio.com/docs/getstarted/keybindings#_contexts
+
+## Macros
+- use for repetitive for hotkeys
+```
+╔══════════════════════════════════════╦══════════════════════════════════════╗
+q > {char}                             ║ start macro recording
+q > {char} > q                         ║ end macro recording
+shift + 2 > {char}                     ║ use macro {char}
+╚══════════════════════════════════════╩══════════════════════════════════════╝
+```
 
 ## Motion
 - enable sneak plugin (within vscode vim settings) 
 ```
-+──────────────────────────────────────+──────────────────────────────────────+
-h                                      | left
-l                                      | right
-k                                      | up
-j                                      | down
-left_command + a                       | move to start of cursor line
-left_command + f                       | move to end of cursor line     *remap*
-left_command + j                       | move down X lines              *remap*
-left_command + k                       | move up X lines                *remap*
-0                                      | move to start of cursor line
-$                                      | move to end of cursor line
-' > '                                  | move cursor to previous position
-right_command > i                      | move cursor history forward
-right_command > o                      | move cursor history back 
-left_command + 3                       | go to definition of cursor     *remap*
-s > {char} > {char}                    | search for character
-shift + s > {char} > {char} > ;        | search for character next
-shift + s > {char} > {char}            | search backwards
-shift + s > {char} > {char} > ;        | search backwards next
-f > {char} > ,                         | move back to char
-f > {char} > ;                         | move forward to char
-shift + f > {char} > ;                 | move back to char
-shift + h                              | move cursor to top of screen 
-shift + m                              | move cursor to middle of screen 
-shift + l                              | move cursor to bottom of screen 
-g > i                                  | move to last edited section
-g > g                                  | move first line
-shift + g                              | move last line
-{number} > shift + g                   | move to {num} line
-shift + 5                              | move to matching {} or ()
-shift + ; > {num} > enter              | move to line {num} 
-+──────────────────────────────────────+──────────────────────────────────────+
+╔══════════════════════════════════════╦══════════════════════════════════════╗
+h                                      ║ left
+l                                      ║ right
+k                                      ║ up
+j                                      ║ down
+left_command + a                       ║ move to start of cursor line
+left_command + f                       ║ move to end of cursor line    *remap*
+left_command + j                       ║ move down X lines             *remap*
+left_command + k                       ║ move up X lines               *remap*
+0                                      ║ move to start of cursor line
+$                                      ║ move to end of cursor line
+' > '                                  ║ move cursor to previous position
+right_command > i                      ║ move cursor history forward
+right_command > o                      ║ move cursor history back 
+left_command + 3                       ║ go to definition of cursor    *remap*
+g > d                                  ║ go to definition of cursor
+s > {char} > {char}                    ║ search for character
+s > {char} > {char} > ;                ║ search for character next
+shift + s > {char} > {char}            ║ search backwards
+shift + s > {char} > {char} > ;        ║ search backwards next
+f > {char} > ,                         ║ move back to char
+f > {char} > ;                         ║ move forward to char
+shift + f > {char} > ;                 ║ move back to char
+shift + h                              ║ move cursor to top of screen 
+shift + m                              ║ move cursor to middle of screen 
+shift + l                              ║ move cursor to bottom of screen 
+g > i                                  ║ move to last edited section
+g > g                                  ║ move first line of file
+shift + g                              ║ move last line of file
+shift + 5                              ║ move to matching {} or ()
+{number} > shift + g                   ║ move to {num} line
+shift + ; > {num} > enter              ║ move to line {num} 
+╚══════════════════════════════════════╩══════════════════════════════════════╝
 ```
 
 ## Normal mode
 ```
-+──────────────────────────────────────+──────────────────────────────────────+
-tab                                    | escape to enter NORMAL mode
-left_command > click                   | multi cursor select
-/ > {word} > enter                     | search for word FORWARD 
-? > {word} > enter                     | search for word BACKWARD 
-/ > {word} > enter > n                 | find next
-q > :                                  | vim history 
-+──────────────────────────────────────+──────────────────────────────────────+
+╔══════════════════════════════════════╦══════════════════════════════════════╗
+tab                                    ║ escape to enter NORMAL mode
+left_command > click                   ║ multi cursor select
+/ > {word} > enter                     ║ search for word FORWARD 
+? > {word} > enter                     ║ search for word BACKWARD 
+/ > {word} > enter > n                 ║ find next
+q > :                                  ║ vim history 
+╚══════════════════════════════════════╩══════════════════════════════════════╝
 ```
 
 ## Insert and Replace
 ```
-+──────────────────────────────────────+──────────────────────────────────────+
-: > %s/old/new/g                       | replace string
-x                                      | delete character in cursor position
-shift + r                              | REPLACE mode
-i                                      | INSERT mode inbetween
-a                                      | INSERT mode append   
-shift + a                              | INSERT mode move to end of line
-v                                      | VISUAL mode
-shift + o                              | INSERT mode blank ABOVE selected line
-o                                      | INSERT mode blank BELOW selected line
-d > d                                  | delete line
-c > c                                  | delete line and INSERT mode
-shift + c                              | delete everything after cursor
-shift + u                              | redo
-u                                      | undo
-d > l                                  | delete 1 character right
-d > h                                  | delete 1 character left
-d > a > w                              | delete selected word
-d > f > {char}                         | delete from cursor to {char}
-left_command + k                       | move current line up
-left_command + j                       | move current line down
-y > y                                  | copy line
-y > i > w                              | copy cursor word
-v > i > w > p                          | paste replace cursor word
-p                                      | paste line after cursor
-shift + p                              | paste line before cursor
-g > u > a > w                          | convert word to lower case
-g > shift+u > a > w                    | convert word to upper case
-g > u > u                              | convert line all lower case
-g > shift+u > shift+u                  | convert line all upper case
-g > g > g > u > shift + g              | convert all linees to lower case
-g > g > g > shift + u > shift + g      | convert all linees to upper case
-+──────────────────────────────────────+──────────────────────────────────────+
+╔══════════════════════════════════════╦══════════════════════════════════════╗
+backspace > x                          ║ delete left                   *remap* 
+: > %s/old/new/g                       ║ replace string
+x                                      ║ delete character in cursor position
+shift + r                              ║ REPLACE mode
+i                                      ║ INSERT mode inbetween
+a                                      ║ INSERT mode append   
+shift + a                              ║ INSERT mode move to end of line
+v                                      ║ VISUAL mode
+shift + o                              ║ INSERT mode blank ABOVE selected line
+o                                      ║ INSERT mode blank BELOW selected line
+d > d                                  ║ delete line
+c > c                                  ║ delete line and INSERT mode
+shift + c                              ║ delete everything after cursor
+shift + u                              ║ redo
+u                                      ║ undo
+d > l                                  ║ delete 1 character right
+d > h                                  ║ delete 1 character left
+d > a > w                              ║ delete selected word
+c > a > w                              ║ delete selected word to insert mode
+d > f > {char}                         ║ delete from CURSOR to {char}
+left_command + k                       ║ move current line up
+left_command + j                       ║ move current line down
+y > y                                  ║ copy line
+y > i > w                              ║ copy cursor word
+v > i > w > p                          ║ paste replace cursor word
+p                                      ║ paste line after cursor
+shift + p                              ║ paste line before cursor
+g > u > a > w                          ║ convert word to lower case
+g > shift+u > a > w                    ║ convert word to upper case
+g > u > u                              ║ convert line all lower case
+g > shift+u > shift+u                  ║ convert line all upper case
+g > g > g > u > shift + g              ║ convert all lines to lower case
+g > g > g > shift + u > shift + g      ║ convert all lines to upper case
+╚══════════════════════════════════════╩══════════════════════════════════════╝
 ```
 
 ## Visual mode
 ```
-+──────────────────────────────────────+──────────────────────────────────────+
-left_command > /                       | comment out selected lines
-shift + v                              | select current line
-v > highlight > o                      | swap highlight position
-v > i > w                              | select word
-v > i > w > shift + s                  | surround mode
-v > i > w > shift + s > {char}         | surround with {char} 
-v > i > w > y > esc > p                | copy word and paste after cursor
-v > i > w > y > esc > P                | copy word and paste before cursor
-+──────────────────────────────────────+──────────────────────────────────────+
+╔══════════════════════════════════════╦══════════════════════════════════════╗
+left_command > /                       ║ comment out selected lines
+shift + v                              ║ select current line
+v > highlight > o                      ║ swap highlight position
+v > i > w                              ║ select word
+v > i > w > shift + s                  ║ surround mode
+v > i > w > shift + s > {char}         ║ surround with {char} 
+v > i > w > y > esc > p                ║ copy word and paste after cursor
+v > i > w > y > esc > P                ║ copy word and paste before cursor
+╚══════════════════════════════════════╩══════════════════════════════════════╝
 ```
 
 # Editor control
 ## Quick search
 ```
-+──────────────────────────────────────+──────────────────────────────────────+
-left_command + space                   | quick search                   *remap*
-space > delete                         | search file                    *remap*
-left_command + 1                       | find in files                  *remap*
-left_command + 2                       | view explorer                  *remap*
-left_command + 3                       | go to definition of cursor     *remap*
-+──────────────────────────────────────+──────────────────────────────────────+
+╔══════════════════════════════════════╦══════════════════════════════════════╗
+left_command + space                   ║ quick search                  *remap*
+space > delete                         ║ search file                   *remap*
+left_command + 1                       ║ find in files                 *remap*
+left_command + 2                       ║ view explorer                 *remap*
+left_command + 3                       ║ go to definition of cursor    *remap*
+╚══════════════════════════════════════╩══════════════════════════════════════╝
 ```
 
 ## Tab control
 ```
-+──────────────────────────────────────+──────────────────────────────────────+
-left_command + shift + t               | re-open recently closed tab
-left_command + d                       | close selected tab             *remap*
-left_command + w                       | toggle to other split window   *remap*
-left_command + e                       | toggle right tab               *remap*
-left_command + q                       | toggle left tab                *remap*
-+──────────────────────────────────────+──────────────────────────────────────+
+╔══════════════════════════════════════╦══════════════════════════════════════╗
+left_command + shift + t               ║ re-open recently closed tab
+left_command + d                       ║ close selected tab            *remap*
+left_command + w                       ║ toggle to other split window  *remap*
+left_command + e                       ║ toggle right tab              *remap*
+left_command + q                       ║ toggle left tab               *remap*
+╚══════════════════════════════════════╩══════════════════════════════════════╝
 ```
 
 ## Window Splitting
 ```
-+──────────────────────────────────────+──────────────────────────────────────+
-left_command + m                       | split vertical                 *remap*
-left_command + n                       | split horizontal               *remap*
-+──────────────────────────────────────+──────────────────────────────────────+
+╔══════════════════════════════════════╦══════════════════════════════════════╗
+left_command + m                       ║ split vertical                *remap*
+left_command + n                       ║ split horizontal              *remap*
+╚══════════════════════════════════════╩══════════════════════════════════════╝
 ```
 
 # Chrome
@@ -253,20 +272,20 @@ unamp U
 unmap gu
 ```
 ```
-+──────────────────────────────────────+──────────────────────────────────────+
-?                                      | open vimium shortcut help 
-g > e                                  | edit current url
-shift + h                              | go back in history
-shift + l                              | go forward in history
-f > {char} > {char}                    | click on link
-o > {word}                             | open URL, bookmark or history entry
-T > {word}                             | search open tabs
-ctrl + shift + t                       | re-open recently closed tab
-left_command + e                       | toggle next tab                *remap*
-left_command + q                       | close current tab              *remap*
-left_command + d                       | open new tab                   *remap*
-left_command + l                       | focus to search bar
-space                                  | scroll down
-shift + space                          | scroll up
-+──────────────────────────────────────+──────────────────────────────────────+
+╔══════════════════════════════════════╦══════════════════════════════════════╗
+?                                      ║ open vimium shortcut help 
+g > e                                  ║ edit current url
+shift + h                              ║ go back in history
+shift + l                              ║ go forward in history
+f > {char} > {char}                    ║ click on link
+o > {word}                             ║ open URL, bookmark or history entry
+T > {word}                             ║ search open tabs
+ctrl + shift + t                       ║ re-open recently closed tab
+left_command + e                       ║ toggle next tab               *remap*
+left_command + q                       ║ close current tab             *remap*
+left_command + d                       ║ open new tab                  *remap*
+left_command + l                       ║ focus to search bar
+space                                  ║ scroll down
+shift + space                          ║ scroll up
+╚══════════════════════════════════════╩══════════════════════════════════════╝
 ```

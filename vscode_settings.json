@@ -19,59 +19,98 @@
     "terminal.integrated.shell.osx": "/bin/zsh",
     "vim.normalModeKeyBindings": [
         {
-        "before": ["m"],
-        "commands": ["bookmarks.toggle"]
+            "before": [
+                "m"
+            ],
+            "commands": [
+                "bookmarks.toggle"
+            ]
         },
         {
-        "before": ["space"],
-        "commands": ["bookmarks.listFromAllFiles"]
-        // "commands": ["workbench.action.showCommands"]
+            "before": [
+                "space"
+            ],
+            "commands": [
+                "bookmarks.listFromAllFiles"
+            ]
+            // "commands": ["workbench.action.showCommands"]
         },
         {
-        "before": ["n"],
-        "commands": ["bookmarks.jumpToNext"]
+            "before": [
+                "n"
+            ],
+            "commands": [
+                "bookmarks.jumpToNext"
+            ]
         },
-        ],
-        "vim.statusBarColors.insert": "#F92672",
-        "vim.statusBarColors.normal": "#272822",
-        "vim.statusBarColors.visual": "#A6E22E",
-        "vim.insertModeKeyBindings": [{ "before": ["<C-]>"], "commands": ["editor.action.indentLines"] }, { "before": ["<C-[>"], "commands": ["editor.action.outdentLines"] }],
-        "vim.handleKeys": {
+        {
+            "before": [
+                "C-n"
+            ],
+            "commands": [
+                "bookmarks.jumpToPrevious"
+            ]
+        },
+    ],
+    "vim.statusBarColors.insert": "#F92672",
+    "vim.statusBarColors.normal": "#272822",
+    "vim.statusBarColors.visual": "#A6E22E",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "<C-]>"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<C-[>"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        }
+    ],
+    "vim.handleKeys": {
         "<D-d>": false,
         "<C-x>": false,
         "<C-a>": false,
         "<C-f>": false,
         "<C-c>": false,
         "<C-v>": false
-        },
-        "vim.cursorStylePerMode.insert": "block",
-        "vim.cursorStylePerMode.normal": "block-outline",
-        "vim.cursorStylePerMode.visual": "line",
-        "workbench.colorCustomizations": {
-            "statusBar.background": "#005f5f",
-            "statusBar.noFolderBackground": "#005f5f",
-            "statusBar.debuggingBackground": "#005f5f"
-        },
-        "vim.statusBarColorControl": true,
-        "editor.multiCursorModifier": "alt",
-        "vim.camelCaseMotion.enable": true,
-        "vim.searchHighlightColor": "#66D9EF",
-        "vim.searchHighlightTextColor": "#272822",
-        "vim.sneak": true,
-        "vim.easymotionMarkerForegroundColorOneChar": "#F92672",
-        "vim.easymotionMarkerForegroundColorTwoChar": "#F92672",
-        "terminal.external.osxExec": "Alacritty.app",
-        "editor.minimap.enabled": false,
-        "bracketPairColorizer.timeOut": 0,
-        "bracketPairColorizer.showBracketsInGutter": true,
-        "bracketPairColorizer.showBracketsInRuler": true,
-        "editor.suggestSelection": "first",
-        "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-        "bookmarks.navigateThroughAllFiles": true,
-        "bookmarks.sideBar.expanded": true,
-        "bookmarks.useWorkaroundForFormatters": true,
-        "vsintellicode.sql.completionsEnabled": false,
-        "python.jediEnabled": false,
-        "bookmarks.saveBookmarksInProject": true,
-        "vim.scroll": 5
+    },
+    "vim.cursorStylePerMode.insert": "block",
+    "vim.cursorStylePerMode.normal": "block-outline",
+    "vim.cursorStylePerMode.visual": "line",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f",
+        "tab.activeBorder": "#F92672",
+        "tab.unfocusedActiveBorder": "#000000"
+    },
+    "vim.statusBarColorControl": true,
+    "editor.multiCursorModifier": "alt",
+    "vim.camelCaseMotion.enable": true,
+    "vim.searchHighlightColor": "#66D9EF",
+    "vim.searchHighlightTextColor": "#272822",
+    "vim.sneak": true,
+    "vim.easymotionMarkerForegroundColorOneChar": "#F92672",
+    "vim.easymotionMarkerForegroundColorTwoChar": "#F92672",
+    "terminal.external.osxExec": "Alacritty.app",
+    "editor.minimap.enabled": false,
+    "bracketPairColorizer.timeOut": 0,
+    "bracketPairColorizer.showBracketsInGutter": true,
+    "bracketPairColorizer.showBracketsInRuler": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "bookmarks.navigateThroughAllFiles": true,
+    "bookmarks.sideBar.expanded": true,
+    "bookmarks.useWorkaroundForFormatters": true,
+    "vsintellicode.sql.completionsEnabled": false,
+    "python.jediEnabled": false,
+    "bookmarks.saveBookmarksInProject": true,
+    "vim.scroll": 10
 }
