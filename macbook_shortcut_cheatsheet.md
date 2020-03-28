@@ -7,6 +7,7 @@
 - Swap right_command with right_control
 ![client](./images/swap_keys.png "client")
 - Add complex modification rule to hjkl to directional
+- see karabiner_complex_modifications.json file
 ![client](./images/hjkl_arrowkeys.png "client")
 ```
 ╔══════════════════════════════════════╦══════════════════════════════════════╗
@@ -56,9 +57,15 @@ brew services start skhd
 ```
 brew cask install alacritty
 ```
+- Install Ranger
+```
+https://github.com/ranger/ranger
+```
 
 ## Multiplexer
 - Tmux + Oh-my-zsh
+- Use zshrc
+- Use tmux.conf and tmux.conf.local 
 ```
 ╔══════════════════════════════════════╦══════════════════════════════════════╗
 right_command + tab                    ║ toggle terminal               *remap*
@@ -245,7 +252,7 @@ left_command + n                       ║ split horizontal              *remap*
 ╚══════════════════════════════════════╩══════════════════════════════════════╝
 ```
 
-# Chrome
+# Brave Web Browser 
 - Install [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb) chrome extension
 - Vimium custom mappings
 ```
@@ -287,5 +294,8 @@ left_command + d                       ║ open new tab                  *remap*
 left_command + l                       ║ focus to search bar
 space                                  ║ scroll down
 shift + space                          ║ scroll up
+fn + F12                               ║ open chrome debugger 
+left_command + [                       ║ move previous panel 
+left_command + ]                       ║ move next panel 
 ╚══════════════════════════════════════╩══════════════════════════════════════╝
 ```
