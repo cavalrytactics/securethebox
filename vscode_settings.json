@@ -33,7 +33,6 @@
             "commands": [
                 "bookmarks.listFromAllFiles"
             ]
-            // "commands": ["workbench.action.showCommands"]
         },
         {
             "before": [
@@ -50,7 +49,7 @@
             "commands": [
                 "bookmarks.jumpToPrevious"
             ]
-        },
+        }
     ],
     "vim.statusBarColors.insert": "#F92672",
     "vim.statusBarColors.normal": "#272822",

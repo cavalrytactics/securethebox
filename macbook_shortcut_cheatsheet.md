@@ -6,24 +6,33 @@
 - Swap left_command with right_command
 - Swap right_command with right_control
 ![client](./images/swap_keys.png "client")
-- Add complex modification rule to hjkl to directional
+- Add complex modifications rules
 - see karabiner_complex_modifications.json file
-![client](./images/hjkl_arrowkeys.png "client")
+![client](./images/complex_modifications.png "client")
+
 ```
 ╔══════════════════════════════════════╦══════════════════════════════════════╗
 left_command + h                       ║ arrow left
 left_command + j                       ║ arrow down
 left_command + k                       ║ arrow up
 left_command + l                       ║ arrow right
+right_command + right_control + s      ║ open bracket [ 
+right_command + right_control + d      ║ open curly bracket { 
+right_command + right_control + f      ║ open parenthesis ( 
+right_command + right_control + j      ║ open parenthesis ) 
+right_command + right_control + k      ║ close curly bracket } 
+right_command + right_control + l      ║ close bracket ] 
 ╚══════════════════════════════════════╩══════════════════════════════════════╝
 ```
 ## Increase key speed
 ![client](./images/mac_keyboard_speed.png "client")
 
-## Turn off press and hold 
+## Turn off press and hold and dictionary 
 ```
-defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool falsedefaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 70 '<dict><key>enabled</key><false/></dict>'
 ```
+## Remove all text modifications in Keyboard settings
+![client](./images/keyboard_text.png "client")
 
 ## Mac App Shortcuts
 - System Preferences > Keyboard > App Shortcuts
@@ -38,17 +47,6 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 left_command + u                       ║ move desktop window left
 left_command + p                       ║ move desktop window right
 ╚══════════════════════════════════════╩══════════════════════════════════════╝
-```
-## Windows Manager 
-```
-brew install koekeishiya/formulae/yabai
-brew services start yabai
-```
-
-## HotKeys Manager
-```
-brew install koekeishiya/formulae/skhd
-brew services start skhd
 ```
 
 ## Terminal
@@ -70,12 +68,12 @@ https://github.com/ranger/ranger
 ╔══════════════════════════════════════╦══════════════════════════════════════╗
 right_command + tab                    ║ toggle terminal               *remap*
 right_command + `                      ║ toggle terminal fullscreen    *remap*
-shift + left_command > h               ║ move to left tmux tab
-shift + left_command > l               ║ move to right tmux tab
+right_comamihift + left_command > l               ║ move to right tmux tab
 right_command + a > c                  ║ create new tab
 right_command + a > , > enter          ║ rename tab
 right_command + a > x > y > enter      ║ close window
-right_command + a > shift + 5          ║ split window
+right_command + a > shift + 5          ║ split window vertical
+right_command + a > shift + '          ║ split window horizontal
 right_command + a > z                  ║ toggle split window expand
 right_command + a > h                  ║ move left split window
 right_command + a > l                  ║ move right split window
@@ -124,8 +122,8 @@ shift + 2 > {char}                     ║ use macro {char}
 ╔══════════════════════════════════════╦══════════════════════════════════════╗
 h                                      ║ left
 l                                      ║ right
-k                                      ║ up
 j                                      ║ down
+k                                      ║ up
 left_command + a                       ║ move to start of cursor line
 left_command + f                       ║ move to end of cursor line    *remap*
 left_command + j                       ║ move down X lines             *remap*
