@@ -10,8 +10,10 @@ export default function typePractice(){
     if "this" then >> that . [{"ID":""}[]]{}{} 
     . , . : ; . , , . ; : : : :  
     . , . , ; . , , . ; :: : : ;
+    . , . , ; . . . . ; :: : : ;
     for i in range(() => {}) return true
     for i in range(() => {}) return true
+    for i in range(()
     [][] `` \ | [{()}][{()}] 
     if "this" then >> that . [][][][]
     if "this" then >> that . [][][][]
