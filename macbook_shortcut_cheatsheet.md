@@ -292,7 +292,7 @@ left_command + d                       ║ open new tab                  *remap*
 left_command + l                       ║ focus to search bar
 space                                  ║ scroll down
 shift + space                          ║ scroll up
-fn + F12                               ║ open chrome debugger 
+left_command + shift + c               ║ open chrome debugger 
 left_command + [                       ║ move previous panel 
 left_command + ]                       ║ move next panel 
 ╚══════════════════════════════════════╩══════════════════════════════════════╝
