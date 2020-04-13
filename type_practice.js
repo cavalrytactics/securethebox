@@ -1,59 +1,79 @@
 import React, { useState } from 'react';
 export default function typePractice(){
     the quick brown fox jumped over the lazy dog
-    the quick brown fox jumped over the lazy dog 
     the quick brown fox jumped over the lazy dog
     the quick brown fox jumped over the lazy dog
-    The Quick Brown Fox Jumped Over The Lazy Dog 
     The Quick Brown Fox Jumped Over The Lazy Dog
-    if "this" then >> that . [{"ID":""}]
-    if "this" then >> that . [{"ID":""}]
-    if "this" then >> that . [{"ID":""}]
+    The Quick Brown Fox Jumped Over The Lazy Dog
+    kubectl python water boba sweet syrup make bastion 
+    kubectl python water boba sweet syrup make bastion
+    kubectl python water boba sweet syrup make bartion
+    iphone keyboard colemak discord layoff if else
+    iphone keyboard colemak discord layoff if else
+    iphone keyboard colemak discord layoff if else
+    return costco then launchpad reddit vim vscode
+    return costco then launchpad reddit vim vscode
+    return costco then launchpad reddit vim vscode
+    macro security engineering performance export
+    macro security engineering performance export
+    default self def function string int graphene
+    default self def function string int graphene
+    mongodb cavalry tactics startup millionaire
+    mongobd cavalry tactics startup millionaire
+    billionaire puppet terraform github slack react
+    billionaire puppet terraform github slack react
+    javascript error warning cough sick karabiner
+    javarcript error warning cough sick karabiner
+    mac os ls netstat ps bash echo cat aws amazon
+    mac os ls netstat ps bash echo cat aws amazon
+    google brave firefox code programming money
+    google brave firefox code programming money
+    story transform clean care low high text json
+    story transform clean care low high text json
+    graqhql value label example const stream twitch
+    graqhql value label example const stream twitch
+    useful tips meetings late failed passed off on
+    useful tips meetings late failed passed off on
+    print console log subscription logstash kibana
+    print console log subscription logstash kibana
+    elasticsearch splunk oncall take got it ok
+    elasticsearch splunk oncall take got it ok
+    sudo acquire release check telegraf all
+    sudo acquire release check telegraf all
+    good kinesis advantage rain weather sunny
+    good kinesis advantage rain weather sunny
+    trackpad layout virtualenv range true false
+    trackpad layout virtualenv range true false
+    practice makes perfect command
+    practice makes perfect command
+    editor keybinding attack connections requests
+    editor keybindind attack connections requests
+    active data gigs ram bytes fullstack blocked
+    active data gigs ram bytes fullstack blocked 
+    ads hours minutes seconds https
+    ads hours minutes seconds https
+    upgrades learn test ccdc scoring time ssh
+    upgrades learn test ccde scoring time ssh 
+    tunneling delete help password
+    tunneling delete help password
+    music value secrets service application match
+    music value secrets service application match
+    pagerduty state issue jira ticket ops ergonomic
+    pagerduty state issue jira ticket ops ergonomic
+    problem solution login unable worked open
+    problem solution login unable worked open
+    ports authentication snyk vulnerability
+    ports authentication snyk vulnerability
+    management tasks airflow calendar incident map 
+    management tasks airflow calendar incident map
     if "this" then >> that . [{"ID":""}[]]{}{}
     if "this" then >> that . [{"ID":""}[]]{}{}
-    if "this" then >> that . [{"ID":""}[]]{}{} 
-    if "this" then >> that . [{"ID":""}[]]{}{}
-    . , . : ; . , , . ; : : : : 
-    . , . : ; . , , . ; : : : :  
-    . , . , ; . , , . ; :: : : ;
-    . , . , ; . , , . ; :: : : ;
-    . , . , ; . . . . ; :: : : ;
+    . , . : ; , , , . : : : : : 
+    . , . ; : , , , . : : : : : 
     for i in range(() => {}) return true
     for i in range(() => {}) return true
-    for i in range(() => {}) return true
-    for i in range(())
-    for i in range(())
-    [][] `` \ | [{()}][{()}]
-    [][] `` \ | [{()}][{()}] 
+    [][] `` \ | / [{()}][{()}] ? ? > <
+    [][] `` \ | / [{()}][{()}] ? ? > <
     if "this" then >> that . [][][][]
     if "this" then >> that . [][][][]
-    if "this" then >> that . [][][][]
-    tb tb rb rb eb eb wb wb qb qb | bt bt br br be be bw bw bq bq  
-    tb tb rb rb eb eb wb wb qb qb | bt bt br br be be bw bw bq bq 
-    tv tv rv rv ev ev wv wv qv qv | vt vt vr vr ve ve vw vw vq vq
-    tv tv rv rv ev ev wv wv qv qv | vt vt vr vr ve ve vw vw vq vq 
-    tc tc rc rc ec ec wc wc qc qc | ct ct cr cr ce ce cw cw cq cq
-    tc tc rc rc ec ec wc wc qc qc | ct ct cr cr ce ce cw cw cq cq
-    tx tx rx rx ex ex wx wx qx qx | xt xt xr xr xe xe xw xw xq xq
-    tx tx rx rx ex ex wx wx qx qx | xt xt xr xr xe xe xw xw xq xq
-    tz tz rz rz ez ez wz wz qz qz | zt zt zr zr ze ze zw zw zq zq
-    tz tz rz tz ez ez wz wz qz qz | zt zt zr zr ze ze zw zw zq zq 
-    yn yn un un in in on on pn pn | ny ny nu nu ni ni no no np np
-    yn yn un un in in on on pn pn | ny ny nu nu ni ni no no np np
-    ym ym um um im im om om pm pm | my my mu mu mi mi mo mo mp mp
-    ym ym um um im im om om pm pm | my my mu mu mi mi mo mo mp mp
-    ym ym um um im im om om pm pm | my my mu mu mi mi mo mo mp mp
-    ym ym um um im im om om pm pm | my my mu mu mi mi mo mo mp mp 
-    ym ym um um im im om om pm pm | my my mu mu mi mi mo mo mp mp
-    ym ym um um im im om om pm pm | ym ym um um mi mi mo mo mp mp
-    y. y. u. u. i. i. o. o. p. p. | .y .y .u .u .i .i .o .o .p .p
-    y. y. u. u. i. i. o. o. p. p. | .y .y .u .u .i .i .o .o .p .p
-    y. y. u. u. i. i. o. o. p. o. | .y .y .u .u .i .i .o .o .p .p
-    y> y> u> u> i> i> o> o> p> o> | >y >y >u >u >i >i >o >o >p >p
-    y> y> u> u> i> i> o> o> p> o> | >y >y >u >u >i >i >o >o >p >p
-    y/ y/ u/ u/ i/ i/ o/ o/ p/ p/ | /y /y /u /u /i /i /o /o /p /p
-    y/ y/ u/ u/ i/ i/ o/ o/ p/ p/ | /y /y /u /u /i /i /o /o /p /p
-    y, y, u, y, i, i, o, o, p, p, | ,y ,y ,u ,u ,i ,i ,o ,o ,p ,p
-    y, y, u, u, i, i, o, o, p, p, | ,y ,y ,u ,u ,i ,i ,o ,o ,p ,p
-    
 }

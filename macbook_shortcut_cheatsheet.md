@@ -1,5 +1,7 @@
 # Mac Setup
 
+# THIS IS FOR COLEMAK LAYOUT
+
 ## karabiner-elements
 - https://karabiner-elements.pqrs.org
 - Swap Esc with Caps Lock key
@@ -11,17 +13,18 @@
 ![client](./images/complex_modifications.png "client")
 
 ```
+COLEMAK
 ╔══════════════════════════════════════╦══════════════════════════════════════╗
 left_command + h                       ║ arrow left
 left_command + j                       ║ arrow down
 left_command + k                       ║ arrow up
 left_command + l                       ║ arrow right
-right_command + right_control + s      ║ open bracket [ 
-right_command + right_control + d      ║ open curly bracket { 
-right_command + right_control + f      ║ open parenthesis ( 
-right_command + right_control + j      ║ open parenthesis ) 
-right_command + right_control + k      ║ close curly bracket } 
-right_command + right_control + l      ║ close bracket ] 
+right_command + right_control + r      ║ open bracket [ 
+right_command + right_control + s      ║ open curly bracket { 
+right_command + right_control + t      ║ open parenthesis ( 
+right_command + right_control + n      ║ open parenthesis ) 
+right_command + right_control + e      ║ close curly bracket } 
+right_command + right_control + i      ║ close bracket ] 
 ╚══════════════════════════════════════╩══════════════════════════════════════╝
 ```
 ## Increase key speed
@@ -44,8 +47,8 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool falsedefaults write
 ![client](./images/mission_control.png "client")
 ```
 ╔══════════════════════════════════════╦══════════════════════════════════════╗
-left_command + u                       ║ move desktop window left
-left_command + p                       ║ move desktop window right
+left_command + j                       ║ move desktop window left
+left_command + ;                       ║ move desktop window right
 ╚══════════════════════════════════════╩══════════════════════════════════════╝
 ```
 
@@ -68,15 +71,17 @@ https://github.com/ranger/ranger
 ╔══════════════════════════════════════╦══════════════════════════════════════╗
 right_command + tab                    ║ toggle terminal               *remap*
 right_command + `                      ║ toggle terminal fullscreen    *remap*
-right_comamihift + left_command > l               ║ move to right tmux tab
-right_command + a > c                  ║ create new tab
-right_command + a > , > enter          ║ rename tab
-right_command + a > x > y > enter      ║ close window
-right_command + a > shift + 5          ║ split window vertical
-right_command + a > shift + '          ║ split window horizontal
-right_command + a > z                  ║ toggle split window expand
-right_command + a > h                  ║ move left split window
-right_command + a > l                  ║ move right split window
+right_comamihift + left_command > l    ║ move to right tmux tab
+right_command + w > c                  ║ create new tab
+right_command + w > , > enter          ║ rename tab
+right_command + w > x > y > enter      ║ close window
+right_command + w > %                  ║ split window vertical
+right_command + w > "                  ║ split window horizontal
+right_command + w > {                  ║ swap window with left 
+right_command + w > }                  ║ swap window with right
+right_command + w > z                  ║ toggle split window expand
+right_command + w > h                  ║ move left split window
+right_command + w > l                  ║ move right split window
 right_command + r > {word}             ║ reverse search command history 
 ╚══════════════════════════════════════╩══════════════════════════════════════╝
 ```
@@ -90,7 +95,7 @@ alias c="git add . && git commit -m 'quick deploy' && git push"
 alias v=". venv/bin/activate"
 source ~/.zshrc
 ```
-# Bookmarks
+# Bookmarks (disabled)
 ```
 ╔══════════════════════════════════════╦══════════════════════════════════════╗
 m                                      ║ toggle bookmark line          *remap* 
@@ -202,6 +207,7 @@ g > u > u                              ║ convert line all lower case
 g > shift+u > shift+u                  ║ convert line all upper case
 g > g > g > u > shift + g              ║ convert all lines to lower case
 g > g > g > shift + u > shift + g      ║ convert all lines to upper case
+left_command + right_ctrl + y          ║ open cursor link
 ╚══════════════════════════════════════╩══════════════════════════════════════╝
 ```
 
@@ -247,6 +253,8 @@ left_command + q                       ║ toggle left tab               *remap*
 ╔══════════════════════════════════════╦══════════════════════════════════════╗
 left_command + m                       ║ split vertical                *remap*
 left_command + n                       ║ split horizontal              *remap*
+left_command + right_command + ,       ║ move window left              *remap*
+left_command + right_command + .       ║ move window right             *remap*
 ╚══════════════════════════════════════╩══════════════════════════════════════╝
 ```
 

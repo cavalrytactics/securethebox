@@ -4,3 +4,9 @@
 [submodule "securethebox-client"]
 	path = securethebox-client
 	url = https://github.com/cavalrytactics/securethebox-client.git
+[submodule "securethebox-client-ts"]
+	path = securethebox-client-ts
+	url = https://github.com/cavalrytactics/securethebox-client-ts.git
+[submodule "securethebox-server-rs"]
+	path = securethebox-server-rs
+	url = https://github.com/cavalrytactics/securethebox-server-rs.git

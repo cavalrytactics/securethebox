@@ -7,6 +7,7 @@
     "window.zoomLevel": 0,
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
+    "problems.decorations.enabled": false,
     "workbench.activityBar.visible": true,
     "workbench.editor.showTabs": true,
     "workbench.editor.enablePreview": false,
@@ -17,59 +18,128 @@
     ],
     "terminal.integrated.rendererType": "dom",
     "terminal.integrated.shell.osx": "/bin/zsh",
-    "vim.normalModeKeyBindings": [
-        {
-            "before": [
-                "m"
-            ],
-            "commands": [
-                "bookmarks.toggle"
-            ]
-        },
-        {
-            "before": [
-                "space"
-            ],
-            "commands": [
-                "bookmarks.listFromAllFiles"
-            ]
-        },
-        {
-            "before": [
-                "n"
-            ],
-            "commands": [
-                "bookmarks.jumpToNext"
-            ]
-        },
-        {
-            "before": [
-                "C-n"
-            ],
-            "commands": [
-                "bookmarks.jumpToPrevious"
-            ]
-        }
-    ],
+    "vim.statusBarColorControl": false,  
     "vim.statusBarColors.insert": "#F92672",
     "vim.statusBarColors.normal": "#272822",
     "vim.statusBarColors.visual": "#A6E22E",
-    "vim.insertModeKeyBindings": [
+    "vim.normalModeKeyBindings": [
         {
-            "before": [
-                "<C-]>"
-            ],
-            "commands": [
-                "editor.action.indentLines"
-            ]
+            "before": ["n"],
+            "after": ["<down>"]
         },
         {
-            "before": [
-                "<C-[>"
-            ],
-            "commands": [
-                "editor.action.outdentLines"
-            ]
+            "before": ["e"],
+            "after": ["<up>"]
+        },
+        {
+            "before": ["i"],
+            "after": ["<right>"]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["n"],
+            "after": ["<down>"]
+        },
+        {
+            "before": ["e"],
+            "after": ["<up>"]
+        },
+        {
+            "before": ["i"],
+            "after": ["<right>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["k"],
+            "after": ["n"]
+        },
+        {
+            "before": ["K"],
+            "after": ["N"]
+        },
+        {
+            "before": ["u"],
+            "after": ["i"]
+        },
+        {
+            "before": ["U"],
+            "after": ["I"]
+        },
+        {
+            "before": ["l"],
+            "after": ["u"]
+        },
+        {
+            "before": ["L"],
+            "after": ["U"]
+        },
+        {
+            "before": ["N"],
+            "after": ["J"]
+        },
+        {
+            "before": ["E"],
+            "after": ["K"]
+        },
+        {
+            "before": ["I"],
+            "after": ["L"]
+        },
+        {
+            "before": ["j"],
+            "after": ["e"]
+        },
+        {
+            "before": ["J"],
+            "after": ["E"]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["k"],
+            "after": ["n"]
+        },
+        {
+            "before": ["K"],
+            "after": ["N"]
+        },
+        {
+            "before": ["u"],
+            "after": ["i"]
+        },
+        {
+            "before": ["U"],
+            "after": ["I"]
+        },
+        {
+            "before": ["l"],
+            "after": ["u"]
+        },
+        {
+            "before": ["L"],
+            "after": ["U"]
+        },
+        {
+            "before": ["N"],
+            "after": ["J"]
+        },
+        {
+            "before": ["E"],
+            "after": ["K"]
+        },
+        {
+            "before": ["I"],
+            "after": ["L"]
+        },
+        {
+            "before": ["j"],
+            "after": ["e"]
+        },
+        {
+            "before": ["J"],
+            "after": ["E"]
         }
     ],
     "vim.handleKeys": {
@@ -84,13 +154,12 @@
     "vim.cursorStylePerMode.normal": "block-outline",
     "vim.cursorStylePerMode.visual": "line",
     "workbench.colorCustomizations": {
-        "statusBar.background": "#005f5f",
-        "statusBar.noFolderBackground": "#005f5f",
-        "statusBar.debuggingBackground": "#005f5f",
+        "statusBar.background": "#272822",
+        "statusBar.noFolderBackground": "#272822",
+        "statusBar.debuggingBackground": "#272822",
         "tab.activeBorder": "#F92672",
         "tab.unfocusedActiveBorder": "#000000"
     },
-    "vim.statusBarColorControl": true,
     "editor.multiCursorModifier": "alt",
     "vim.camelCaseMotion.enable": true,
     "vim.searchHighlightColor": "#66D9EF",
@@ -104,12 +173,61 @@
     "bracketPairColorizer.showBracketsInGutter": true,
     "bracketPairColorizer.showBracketsInRuler": true,
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "bookmarks.navigateThroughAllFiles": true,
-    "bookmarks.sideBar.expanded": true,
-    "bookmarks.useWorkaroundForFormatters": true,
-    "vsintellicode.sql.completionsEnabled": false,
+    "editor.autoClosingQuotes": "never",
+    "editor.autoClosingBrackets": "never",
     "python.jediEnabled": false,
-    "bookmarks.saveBookmarksInProject": true,
-    "vim.scroll": 10
+    "vim.scroll": 10,
+    "vim.useSystemClipboard": true,
+    "vim.debug.silent": true,
+    "typescript.check.npmIsInstalled": false,
+    "css.validate": false,
+    "typescript.validate.enable": false,
+    "javascript.validate.enable": false,
+    "php.validate.enable": false,
+    "html.validate.scripts": false,
+    "html.validate.styles": false,
+    "less.validate": false,
+    "scss.validate": false,
+    "vim.enableNeovim": true,
+    "vim.neovimPath": "/usr/local/bin/nvim",
+    "editor.maxTokenizationLineLength": 100,
+    "json.maxItemsComputed": 100,
+    "vim.experimentalOptimizations": true,
+    "editor.accessibilityPageSize": 1,
+    "css.lint.emptyRules": "ignore",
+    "css.lint.argumentsInColorFunction": "ignore",
+    "css.lint.fontFaceProperties": "ignore",
+    "css.lint.hexColorLength": "ignore",
+    "css.lint.propertyIgnoredDueToDisplay": "ignore",
+    "css.lint.unknownAtRules": "ignore",
+    "css.lint.unknownProperties": "ignore",
+    "css.lint.vendorPrefix": "ignore",
+    "less.lint.argumentsInColorFunction": "ignore",
+    "less.lint.emptyRules": "ignore",
+    "less.lint.hexColorLength": "ignore",
+    "less.lint.unknownAtRules": "ignore",
+    "less.lint.unknownProperties": "ignore",
+    "less.lint.vendorPrefix": "ignore",
+    "scss.lint.argumentsInColorFunction": "ignore",
+    "scss.lint.emptyRules": "ignore",
+    "scss.lint.fontFaceProperties": "ignore",
+    "scss.lint.hexColorLength": "ignore",
+    "scss.lint.propertyIgnoredDueToDisplay": "ignore",
+    "scss.lint.unknownAtRules": "ignore",
+    "scss.lint.unknownProperties": "ignore",
+    "scss.lint.vendorPrefix": "ignore",
+    "git.autorefresh": false,
+    "git.autoRepositoryDetection": false,
+    "git.confirmEmptyCommits": false,
+    "git.enabled": false,
+    "git.decorations.enabled": false,
+    "git.detectSubmodules": false,
+    "git.enableStatusBarSync": false,
+    "debug.console.historySuggestions": false,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "keyboard.touchbar.enabled": false,
+    "problems.autoReveal": false,
+    "terminal.explorerKind": "external",
+    "terminal.external.linuxExec": ""
 }

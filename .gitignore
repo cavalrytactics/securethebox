@@ -1,5 +1,7 @@
 .history
 secrets
+private/
 private
+private/*
 .DS_Store
 _vscode
