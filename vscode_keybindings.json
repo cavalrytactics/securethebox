@@ -1,6 +1,30 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
     {
+        "command": "vscode-neovim.send",
+        "key": "n",
+        "when": "neovim.mode == normal",
+        "args": "<Down>"
+    },
+    {
+        "command": "vscode-neovim.send",
+        "key": "e",
+        "when": "neovim.mode == normal",
+        "args": "<Up>"
+    },
+    {
+        "command": "vscode-neovim.send",
+        "key": "i",
+        "when": "neovim.mode == normal",
+        "args": "<Right>"
+    },
+    {
+        "command": "vscode-neovim.send",
+        "key": "u",
+        "when": "neovim.mode == normal",
+        "args": "i"
+    },
+    {
         "key": "shift+cmd+f",
         "command": "-workbench.action.findInFiles"
     },
@@ -581,5 +605,13 @@
         "key": "cmd+backspace",
         "command": "-deleteFile",
         "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceMoveableToTrash && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "ctrl+cmd+y",
+        "command": "editor.action.openLink"
+    },
+    {
+        "key": "shift+cmd+m",
+        "command": "-workbench.actions.view.problems"
     }
 ]

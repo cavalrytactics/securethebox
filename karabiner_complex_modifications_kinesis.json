@@ -359,6 +359,466 @@
       ]
     },
     {
+      "description": "left_command + right_control + z to 1",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "z",
+            "modifiers": {
+              "mandatory": [
+                "right_control",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "left_command + right_control + x to 2",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "x",
+            "modifiers": {
+              "mandatory": [
+                "right_control",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "left_command + right_control + c to 3",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+                "right_control",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "left_command + right_control + v to 4",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "v",
+            "modifiers": {
+              "mandatory": [
+                "right_control",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "left_command + right_control + b to 5",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "right_control",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "left_command + right_control + n to 6",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "right_control",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "left_command + right_control + m to 7",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "m",
+            "modifiers": {
+              "mandatory": [
+                "right_control",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "left_command + right_control + comma to 8",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "comma",
+            "modifiers": {
+              "mandatory": [
+                "right_control",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "left_command + right_control + period to 9",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "period",
+            "modifiers": {
+              "mandatory": [
+                "right_control",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "left_command + right_control + slash to 0",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "slash",
+            "modifiers": {
+              "mandatory": [
+                "right_control",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "left_command + right_control + shift + z to !",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "z",
+            "modifiers": {
+              "mandatory": [
+                "right_control",
+                "left_command",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "1",
+              "modifiers": "left_shift"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "left_command + right_control + shift + x to @",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "x",
+            "modifiers": {
+              "mandatory": [
+                "right_control",
+                "left_command",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": "left_shift"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "left_command + right_control + shift + c to #",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+                "right_control",
+                "left_command",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "3",
+              "modifiers": "left_shift"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "left_command + right_control + shift + v to $",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "v",
+            "modifiers": {
+              "mandatory": [
+                "right_control",
+                "left_command",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "4",
+              "modifiers": "left_shift"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "left_command + right_control + shift + 5 to %",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "right_control",
+                "left_command",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "5",
+              "modifiers": "left_shift"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "left_command + right_control + shift + n to ^",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "right_control",
+                "left_command",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "6",
+              "modifiers": "left_shift"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "left_command + right_control + shift + m to &",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "m",
+            "modifiers": {
+              "mandatory": [
+                "right_control",
+                "left_command",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "7",
+              "modifiers": "left_shift"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "left_command + right_control + shift + comma to *",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "comma",
+            "modifiers": {
+              "mandatory": [
+                "right_control",
+                "left_command",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "8",
+              "modifiers": "left_shift"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "left_command + right_control + shift + period to (",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "period",
+            "modifiers": {
+              "mandatory": [
+                "right_control",
+                "left_command",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "9",
+              "modifiers": "left_shift"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "left_command + right_control + shift + slash to )",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "slash",
+            "modifiers": {
+              "mandatory": [
+                "right_control",
+                "left_command",
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "0",
+              "modifiers": "left_shift"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "left_command + right_control + l to close box bracket",
       "manipulators": [
         {
