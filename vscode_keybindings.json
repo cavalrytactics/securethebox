@@ -1,28 +1,54 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
     {
+        "key": "ctrl+e",
+        "command": "cursorMove",
+        "args": {
+            "to": "up",
+            "by": "line",
+            "value": 10
+        },
+        "when": "editorTextFocus && neovim.mode == normal"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "cursorMove",
+        "args": {
+            "to": "down",
+            "by": "line",
+            "value": 10
+        },
+        "when": "editorTextFocus && neovim.mode == normal"
+    },
+    {
         "command": "vscode-neovim.send",
         "key": "n",
-        "when": "neovim.mode == normal",
+        "when": "editorTextFocus&& neovim.mode == normal",
         "args": "<Down>"
     },
     {
         "command": "vscode-neovim.send",
         "key": "e",
-        "when": "neovim.mode == normal",
+        "when": "editorTextFocus && neovim.mode == normal",
         "args": "<Up>"
     },
     {
         "command": "vscode-neovim.send",
         "key": "i",
-        "when": "neovim.mode == normal",
+        "when": "editorTextFocus && neovim.mode == normal",
         "args": "<Right>"
     },
     {
         "command": "vscode-neovim.send",
         "key": "u",
-        "when": "neovim.mode == normal",
+        "when": "editorTextFocus && neovim.mode == normal",
         "args": "i"
+    },
+    {
+        "command": "vscode-neovim.send",
+        "key": "l",
+        "when": "editorTextFocus && neovim.mode == normal",
+        "args": "u"
     },
     {
         "key": "shift+cmd+f",
@@ -613,5 +639,9 @@
     {
         "key": "shift+cmd+m",
         "command": "-workbench.actions.view.problems"
+    },
+    {
+        "key": "shift+cmd+u",
+        "command": "-workbench.action.output.toggleOutput"
     }
 ]

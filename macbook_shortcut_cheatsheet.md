@@ -71,7 +71,7 @@ https://github.com/ranger/ranger
 ╔══════════════════════════════════════╦══════════════════════════════════════╗
 right_command + tab                    ║ toggle terminal               *remap*
 right_command + `                      ║ toggle terminal fullscreen    *remap*
-right_comamihift + left_command > l    ║ move to right tmux tab
+right_command + left_command > l       ║ move to right tmux tab
 right_command + w > c                  ║ create new tab
 right_command + w > , > enter          ║ rename tab
 right_command + w > x > y > enter      ║ close window
