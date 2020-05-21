@@ -1,10 +1,8 @@
 {
-    "git.confirmSync": false,
-    "workbench.colorTheme": "Monokai ST3",
     "javascript.updateImportsOnFileMove.enabled": "always",
     "typescript.updateImportsOnFileMove.enabled": "always",
     "extensions.ignoreRecommendations": true,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "problems.decorations.enabled": false,
@@ -13,147 +11,20 @@
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": true,
     "workbench.editor.tabSizing": "shrink",
+    "editor.lineNumbers": "relative",
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80,
     "editor.rulers": [
         80
     ],
     "terminal.integrated.rendererType": "dom",
     "terminal.integrated.shell.osx": "/bin/zsh",
-    "vim.statusBarColorControl": false,  
-    "vim.statusBarColors.insert": "#F92672",
-    "vim.statusBarColors.normal": "#272822",
-    "vim.statusBarColors.visual": "#A6E22E",
-    "vim.normalModeKeyBindings": [
-        {
-            "before": ["n"],
-            "after": ["<down>"]
-        },
-        {
-            "before": ["e"],
-            "after": ["<up>"]
-        },
-        {
-            "before": ["i"],
-            "after": ["<right>"]
-        }
-    ],
-    "vim.visualModeKeyBindings": [
-        {
-            "before": ["n"],
-            "after": ["<down>"]
-        },
-        {
-            "before": ["e"],
-            "after": ["<up>"]
-        },
-        {
-            "before": ["i"],
-            "after": ["<right>"]
-        }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": ["k"],
-            "after": ["n"]
-        },
-        {
-            "before": ["K"],
-            "after": ["N"]
-        },
-        {
-            "before": ["u"],
-            "after": ["i"]
-        },
-        {
-            "before": ["U"],
-            "after": ["I"]
-        },
-        {
-            "before": ["l"],
-            "after": ["u"]
-        },
-        {
-            "before": ["L"],
-            "after": ["U"]
-        },
-        {
-            "before": ["N"],
-            "after": ["J"]
-        },
-        {
-            "before": ["E"],
-            "after": ["K"]
-        },
-        {
-            "before": ["I"],
-            "after": ["L"]
-        },
-        {
-            "before": ["j"],
-            "after": ["e"]
-        },
-        {
-            "before": ["J"],
-            "after": ["E"]
-        }
-    ],
-    "vim.visualModeKeyBindingsNonRecursive": [
-        {
-            "before": ["k"],
-            "after": ["n"]
-        },
-        {
-            "before": ["K"],
-            "after": ["N"]
-        },
-        {
-            "before": ["u"],
-            "after": ["i"]
-        },
-        {
-            "before": ["U"],
-            "after": ["I"]
-        },
-        {
-            "before": ["l"],
-            "after": ["u"]
-        },
-        {
-            "before": ["L"],
-            "after": ["U"]
-        },
-        {
-            "before": ["N"],
-            "after": ["J"]
-        },
-        {
-            "before": ["E"],
-            "after": ["K"]
-        },
-        {
-            "before": ["I"],
-            "after": ["L"]
-        },
-        {
-            "before": ["j"],
-            "after": ["e"]
-        },
-        {
-            "before": ["J"],
-            "after": ["E"]
-        }
-    ],
-    "vim.handleKeys": {
-        "<D-d>": false,
-        "<C-x>": false,
-        "<C-a>": false,
-        "<C-f>": false,
-        "<C-c>": false,
-        "<C-v>": false
-    },
-    "vim.cursorStylePerMode.insert": "block",
-    "vim.cursorStylePerMode.normal": "block-outline",
-    "vim.cursorStylePerMode.visual": "line",
     "workbench.colorCustomizations": {
+        "gitDecoration.ignoredResourceForeground": "#F92672",
+        "gitDecoration.addedResourceForeground": "#FD971F",
+        "gitDecoration.modifiedResourceForeground": "#66D9EF",
+        "gitDecoration.conflictingResourceForeground": "#964AFB",
+        "gitDecoration.untrackedResourceForeground": "#A6E22E",
         "statusBar.background": "#272822",
         "statusBar.noFolderBackground": "#272822",
         "statusBar.debuggingBackground": "#272822",
@@ -161,24 +32,15 @@
         "tab.unfocusedActiveBorder": "#000000"
     },
     "editor.multiCursorModifier": "alt",
-    "vim.camelCaseMotion.enable": true,
-    "vim.searchHighlightColor": "#66D9EF",
-    "vim.searchHighlightTextColor": "#272822",
-    "vim.sneak": true,
-    "vim.easymotionMarkerForegroundColorOneChar": "#F92672",
-    "vim.easymotionMarkerForegroundColorTwoChar": "#F92672",
     "terminal.external.osxExec": "Alacritty.app",
     "editor.minimap.enabled": false,
     "bracketPairColorizer.timeOut": 0,
     "bracketPairColorizer.showBracketsInGutter": true,
     "bracketPairColorizer.showBracketsInRuler": true,
+    "editor.quickSuggestions": false,
     "editor.suggestSelection": "first",
     "editor.autoClosingQuotes": "never",
     "editor.autoClosingBrackets": "never",
-    "python.jediEnabled": false,
-    "vim.scroll": 10,
-    "vim.useSystemClipboard": true,
-    "vim.debug.silent": true,
     "typescript.check.npmIsInstalled": false,
     "css.validate": false,
     "typescript.validate.enable": false,
@@ -188,11 +50,8 @@
     "html.validate.styles": false,
     "less.validate": false,
     "scss.validate": false,
-    "vim.enableNeovim": true,
-    "vim.neovimPath": "/usr/local/bin/nvim",
     "editor.maxTokenizationLineLength": 100,
     "json.maxItemsComputed": 100,
-    "vim.experimentalOptimizations": true,
     "editor.accessibilityPageSize": 1,
     "css.lint.emptyRules": "ignore",
     "css.lint.argumentsInColorFunction": "ignore",
@@ -216,12 +75,8 @@
     "scss.lint.unknownAtRules": "ignore",
     "scss.lint.unknownProperties": "ignore",
     "scss.lint.vendorPrefix": "ignore",
-    "git.autorefresh": false,
     "git.autoRepositoryDetection": false,
     "git.confirmEmptyCommits": false,
-    "git.enabled": false,
-    "git.decorations.enabled": false,
-    "git.detectSubmodules": false,
     "git.enableStatusBarSync": false,
     "debug.console.historySuggestions": false,
     "telemetry.enableCrashReporter": false,
@@ -229,5 +84,22 @@
     "keyboard.touchbar.enabled": false,
     "problems.autoReveal": false,
     "terminal.explorerKind": "external",
-    "terminal.external.linuxExec": ""
+    "terminal.external.linuxExec": "",
+    "rust-client.rustupPath": "$HOME/.cargo/bin/rustup",
+    "search.useGlobalIgnoreFiles": true,
+    "git.alwaysShowStagedChangesResourceGroup": true,
+    "git.autofetch": true,
+    "json.schemas": [],
+    "workbench.colorTheme": "Monokai ST3",
+    "vscode-neovim.neovimPath": "/usr/local/bin/nvim",
+    "vscode-neovim.useCtrlKeysForInsertMode": false,
+    "vscode-neovim.useCtrlKeysForNormalMode": false,
+    "vscode-neovim.highlightGroups.highlights": {},
+    "git.showProgress": false,
+    "rust-client.enableMultiProjectSetup": null,
+    "editor.formatOnSave": true,
+    "rust-client.updateOnStartup": true,
+    "rust.all_features": true,
+    "vscode-neovim.highlightGroups.unknownHighlight": {},
+    "vscode-neovim.neovimInitPath": "/Users/charleschong/.config/nvim/init.vim",
 }
